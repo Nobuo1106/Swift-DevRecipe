@@ -12,7 +12,6 @@ class NormalActivityViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     private func share() {
@@ -34,7 +33,6 @@ class NormalActivityViewController: UIViewController {
         activity.popoverPresentationController?.sourceView = button
         activity.popoverPresentationController?.sourceRect = button.bounds
 
-        // 3
         present(activity, animated: true, completion: nil)
     }
     @IBAction func buttonDidTap(_ sender: Any) {
