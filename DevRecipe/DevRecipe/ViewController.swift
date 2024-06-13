@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    enum ViewType: String, CaseIterable {
+        case StickyHeaderCollection
+        var viewController: UIViewController {
+            switch self {
+            case .StickyHeaderCollection:
+                UIStoryboard.stickyHeaderCollection.instantiateInitialViewController() as! StickyHeaderCollectionViewController
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func toStickyHeaderDidTap(_ sender: UIButton) {
+        navigationController?.pushViewController(ViewType.StickyHeaderCollection.viewController, animated: true)
+    }
 }
 
