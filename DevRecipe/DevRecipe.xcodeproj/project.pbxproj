@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70760F52C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70760F32C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift */; };
+		C70760F62C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */; };
+		C70760F82C22B6D1006F9930 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70760F72C22B6D1006F9930 /* UIImageView+.swift */; };
 		C73998832C1AFADC00589742 /* StickyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */; };
 		C73998862C1B003900589742 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998852C1B003900589742 /* Storyboard+.swift */; };
 		C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */; };
+		C739988D2C1FD04600589742 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739988C2C1FD04600589742 /* SampleModel.swift */; };
+		C739988F2C1FE1BE00589742 /* StickyCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739988E2C1FE1BE00589742 /* StickyCollectionHeaderView.swift */; };
 		C73E603E2B9091C000586FC5 /* NormalActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E603D2B9091C000586FC5 /* NormalActivityViewController.swift */; };
 		C73E60402B9091F500586FC5 /* NormalActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73E603F2B9091F500586FC5 /* NormalActivityViewController.storyboard */; };
 		C73E60432B90939200586FC5 /* FileManipulateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E60422B90939200586FC5 /* FileManipulateViewController.swift */; };
@@ -25,9 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70760F32C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPurposeCollectionViewCell.swift; sourceTree = "<group>"; };
+		C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralPurposeCollectionViewCell.xib; sourceTree = "<group>"; };
+		C70760F72C22B6D1006F9930 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
 		C73998852C1B003900589742 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StickyHeaderCollectionViewController.storyboard; sourceTree = "<group>"; };
+		C739988C2C1FD04600589742 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		C739988E2C1FE1BE00589742 /* StickyCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCollectionHeaderView.swift; sourceTree = "<group>"; };
 		C73E603D2B9091C000586FC5 /* NormalActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalActivityViewController.swift; sourceTree = "<group>"; };
 		C73E603F2B9091F500586FC5 /* NormalActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NormalActivityViewController.storyboard; sourceTree = "<group>"; };
 		C73E60422B90939200586FC5 /* FileManipulateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulateViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +65,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70760F02C22B11C006F9930 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C70760F32C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift */,
+				C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C73998802C1AFA8C00589742 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				C70760F02C22B11C006F9930 /* Cell */,
 				C73998812C1AFAAD00589742 /* StickyHeader */,
 			);
 			path = CollectionView;
@@ -68,6 +88,7 @@
 			children = (
 				C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */,
 				C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */,
+				C739988E2C1FE1BE00589742 /* StickyCollectionHeaderView.swift */,
 			);
 			path = StickyHeader;
 			sourceTree = "<group>";
@@ -76,8 +97,17 @@
 			isa = PBXGroup;
 			children = (
 				C73998852C1B003900589742 /* Storyboard+.swift */,
+				C70760F72C22B6D1006F9930 /* UIImageView+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C739988A2C1FCFED00589742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C739988C2C1FD04600589742 /* SampleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C73E603C2B90917000586FC5 /* NormalActivity */ = {
@@ -117,6 +147,7 @@
 		C766C9B72B8849D70075D0B5 /* DevRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				C739988A2C1FCFED00589742 /* Model */,
 				C766C9B82B8849D70075D0B5 /* AppDelegate.swift */,
 				C766C9BA2B8849D70075D0B5 /* SceneDelegate.swift */,
 				C766C9BC2B8849D70075D0B5 /* ViewController.swift */,
@@ -200,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70760F62C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib in Resources */,
 				C766C9D12B884A580075D0B5 /* NormalScrollViewController.storyboard in Resources */,
 				C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */,
 				C73E60452B9093AE00586FC5 /* FileManipulateViewController.storyboard in Resources */,
@@ -216,7 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70760F82C22B6D1006F9930 /* UIImageView+.swift in Sources */,
+				C70760F52C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift in Sources */,
+				C739988F2C1FE1BE00589742 /* StickyCollectionHeaderView.swift in Sources */,
 				C73E60432B90939200586FC5 /* FileManipulateViewController.swift in Sources */,
+				C739988D2C1FD04600589742 /* SampleModel.swift in Sources */,
 				C73E603E2B9091C000586FC5 /* NormalActivityViewController.swift in Sources */,
 				C73998862C1B003900589742 /* Storyboard+.swift in Sources */,
 				C766C9BD2B8849D70075D0B5 /* ViewController.swift in Sources */,
