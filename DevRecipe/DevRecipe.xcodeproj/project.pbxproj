@@ -15,6 +15,7 @@
 		C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */; };
 		C739988D2C1FD04600589742 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739988C2C1FD04600589742 /* SampleModel.swift */; };
 		C739988F2C1FE1BE00589742 /* StickyCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739988E2C1FE1BE00589742 /* StickyCollectionHeaderView.swift */; };
+		C73A81D82C2AB5AE00DEE917 /* TouchTransparencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A81D72C2AB5AE00DEE917 /* TouchTransparencyViewController.swift */; };
 		C73E603E2B9091C000586FC5 /* NormalActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E603D2B9091C000586FC5 /* NormalActivityViewController.swift */; };
 		C73E60402B9091F500586FC5 /* NormalActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73E603F2B9091F500586FC5 /* NormalActivityViewController.storyboard */; };
 		C73E60432B90939200586FC5 /* FileManipulateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73E60422B90939200586FC5 /* FileManipulateViewController.swift */; };
@@ -38,6 +39,7 @@
 		C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StickyHeaderCollectionViewController.storyboard; sourceTree = "<group>"; };
 		C739988C2C1FD04600589742 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		C739988E2C1FE1BE00589742 /* StickyCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCollectionHeaderView.swift; sourceTree = "<group>"; };
+		C73A81D72C2AB5AE00DEE917 /* TouchTransparencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTransparencyViewController.swift; sourceTree = "<group>"; };
 		C73E603D2B9091C000586FC5 /* NormalActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalActivityViewController.swift; sourceTree = "<group>"; };
 		C73E603F2B9091F500586FC5 /* NormalActivityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NormalActivityViewController.storyboard; sourceTree = "<group>"; };
 		C73E60422B90939200586FC5 /* FileManipulateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulateViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C73A81D62C2AB47300DEE917 /* TouchTransparency */ = {
+			isa = PBXGroup;
+			children = (
+				C73A81D72C2AB5AE00DEE917 /* TouchTransparencyViewController.swift */,
+			);
+			path = TouchTransparency;
+			sourceTree = "<group>";
+		};
 		C73E603C2B90917000586FC5 /* NormalActivity */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 				C766C9C62B8849D80075D0B5 /* ViewController.storyboard */,
 				C73998802C1AFA8C00589742 /* CollectionView */,
 				C766C9CF2B8849F30075D0B5 /* NormalScroll */,
+				C73A81D62C2AB47300DEE917 /* TouchTransparency */,
 				C73E603C2B90917000586FC5 /* NormalActivity */,
 				C73E60412B90936B00586FC5 /* FileManipulate */,
 				C73998842C1B000300589742 /* Extensions */,
@@ -260,6 +271,7 @@
 				C766C9B92B8849D70075D0B5 /* AppDelegate.swift in Sources */,
 				C766C9BB2B8849D70075D0B5 /* SceneDelegate.swift in Sources */,
 				C766C9D32B8859210075D0B5 /* NormalScrollViewController.swift in Sources */,
+				C73A81D82C2AB5AE00DEE917 /* TouchTransparencyViewController.swift in Sources */,
 				C73998832C1AFADC00589742 /* StickyHeaderCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

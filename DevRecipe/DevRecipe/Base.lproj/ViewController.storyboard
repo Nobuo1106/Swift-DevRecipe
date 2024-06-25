@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-wG-ZP6">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="88.666666666666671"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2yY-dl-KUi">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2yY-dl-KUi">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="88.666666666666671"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-zK-Ji9">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
@@ -32,6 +32,15 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Sticky Header CollectionView"/>
                                                         <connections>
                                                             <action selector="toStickyHeaderDidTap:" destination="01J-lp-oVM" eventType="touchUpInside" id="HD2-hc-jZ7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDK-f4-LUM">
+                                                        <rect key="frame" x="0.0" y="54.333333333333343" width="393" height="34.333333333333343"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Touch Transparency"/>
+                                                        <connections>
+                                                            <action selector="toTouchTransParencydidTap:" destination="01J-lp-oVM" eventType="touchUpInside" id="APk-ao-Rs4"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
