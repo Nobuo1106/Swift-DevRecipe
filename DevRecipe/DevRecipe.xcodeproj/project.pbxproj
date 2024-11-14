@@ -10,6 +10,10 @@
 		C70760F52C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70760F32C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift */; };
 		C70760F62C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */; };
 		C70760F82C22B6D1006F9930 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70760F72C22B6D1006F9930 /* UIImageView+.swift */; };
+		C70E02EA2CE58780003D4D99 /* NWPathMonitorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70E02E92CE58780003D4D99 /* NWPathMonitorViewController.storyboard */; };
+		C70E02EE2CE58808003D4D99 /* NWPathMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02ED2CE58808003D4D99 /* NWPathMonitorViewController.swift */; };
+		C70E02F12CE58963003D4D99 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02F02CE58957003D4D99 /* NetworkStatus.swift */; };
+		C70E02F42CE58C06003D4D99 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */; };
 		C73998832C1AFADC00589742 /* StickyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */; };
 		C73998862C1B003900589742 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998852C1B003900589742 /* Storyboard+.swift */; };
 		C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */; };
@@ -34,6 +38,10 @@
 		C70760F32C22B16B006F9930 /* GeneralPurposeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPurposeCollectionViewCell.swift; sourceTree = "<group>"; };
 		C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralPurposeCollectionViewCell.xib; sourceTree = "<group>"; };
 		C70760F72C22B6D1006F9930 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		C70E02E92CE58780003D4D99 /* NWPathMonitorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NWPathMonitorViewController.storyboard; sourceTree = "<group>"; };
+		C70E02ED2CE58808003D4D99 /* NWPathMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorViewController.swift; sourceTree = "<group>"; };
+		C70E02F02CE58957003D4D99 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
 		C73998852C1B003900589742 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StickyHeaderCollectionViewController.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,33 @@
 				C70760F42C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C70E02E82CE5870D003D4D99 /* NWPathMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				C70E02F22CE58AB9003D4D99 /* Service */,
+				C70E02EF2CE58948003D4D99 /* Enum */,
+				C70E02E92CE58780003D4D99 /* NWPathMonitorViewController.storyboard */,
+				C70E02ED2CE58808003D4D99 /* NWPathMonitorViewController.swift */,
+			);
+			path = NWPathMonitor;
+			sourceTree = "<group>";
+		};
+		C70E02EF2CE58948003D4D99 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C70E02F02CE58957003D4D99 /* NetworkStatus.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C70E02F22CE58AB9003D4D99 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C73998802C1AFA8C00589742 /* CollectionView */ = {
@@ -168,6 +203,7 @@
 				C73E603C2B90917000586FC5 /* NormalActivity */,
 				C73E60412B90936B00586FC5 /* FileManipulate */,
 				C73998842C1B000300589742 /* Extensions */,
+				C70E02E82CE5870D003D4D99 /* NWPathMonitor */,
 				C766C9C42B8849D80075D0B5 /* Assets.xcassets */,
 				C766C9C92B8849D80075D0B5 /* Info.plist */,
 				C766C9C12B8849D70075D0B5 /* DevRecipe.xcdatamodeld */,
@@ -247,6 +283,7 @@
 				C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */,
 				C73E60452B9093AE00586FC5 /* FileManipulateViewController.storyboard in Resources */,
 				C766C9C82B8849D80075D0B5 /* ViewController.storyboard in Resources */,
+				C70E02EA2CE58780003D4D99 /* NWPathMonitorViewController.storyboard in Resources */,
 				C766C9C52B8849D80075D0B5 /* Assets.xcassets in Resources */,
 				C73E60402B9091F500586FC5 /* NormalActivityViewController.storyboard in Resources */,
 			);
@@ -267,9 +304,12 @@
 				C73E603E2B9091C000586FC5 /* NormalActivityViewController.swift in Sources */,
 				C73998862C1B003900589742 /* Storyboard+.swift in Sources */,
 				C766C9BD2B8849D70075D0B5 /* ViewController.swift in Sources */,
+				C70E02F42CE58C06003D4D99 /* NetworkMonitor.swift in Sources */,
+				C70E02EE2CE58808003D4D99 /* NWPathMonitorViewController.swift in Sources */,
 				C766C9C32B8849D70075D0B5 /* DevRecipe.xcdatamodeld in Sources */,
 				C766C9B92B8849D70075D0B5 /* AppDelegate.swift in Sources */,
 				C766C9BB2B8849D70075D0B5 /* SceneDelegate.swift in Sources */,
+				C70E02F12CE58963003D4D99 /* NetworkStatus.swift in Sources */,
 				C766C9D32B8859210075D0B5 /* NormalScrollViewController.swift in Sources */,
 				C73A81D82C2AB5AE00DEE917 /* TouchTransparencyViewController.swift in Sources */,
 				C73998832C1AFADC00589742 /* StickyHeaderCollectionViewController.swift in Sources */,
@@ -421,7 +461,7 @@
 				INFOPLIST_FILE = DevRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ViewController;
+				INFOPLIST_KEY_UIMainStoryboardFile = NWPathMonitorViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,7 +492,7 @@
 				INFOPLIST_FILE = DevRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ViewController;
+				INFOPLIST_KEY_UIMainStoryboardFile = NWPathMonitorViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
