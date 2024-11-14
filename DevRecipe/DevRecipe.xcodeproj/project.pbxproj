@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		C70E02EE2CE58808003D4D99 /* NWPathMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02ED2CE58808003D4D99 /* NWPathMonitorViewController.swift */; };
 		C70E02F12CE58963003D4D99 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02F02CE58957003D4D99 /* NetworkStatus.swift */; };
 		C70E02F42CE58C06003D4D99 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */; };
+		C71625F02CE5F770005F7C74 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C71625EF2CE5F770005F7C74 /* Kingfisher */; };
+		C71625F32CE5FB9F005F7C74 /* KingFisherViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71625F22CE5FB9F005F7C74 /* KingFisherViewController.storyboard */; };
+		C71625F52CE5FBC1005F7C74 /* KingFisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71625F42CE5FBC1005F7C74 /* KingFisherViewController.swift */; };
 		C73998832C1AFADC00589742 /* StickyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */; };
 		C73998862C1B003900589742 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73998852C1B003900589742 /* Storyboard+.swift */; };
 		C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */; };
@@ -42,6 +45,8 @@
 		C70E02ED2CE58808003D4D99 /* NWPathMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorViewController.swift; sourceTree = "<group>"; };
 		C70E02F02CE58957003D4D99 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		C71625F22CE5FB9F005F7C74 /* KingFisherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KingFisherViewController.storyboard; sourceTree = "<group>"; };
+		C71625F42CE5FBC1005F7C74 /* KingFisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFisherViewController.swift; sourceTree = "<group>"; };
 		C73998822C1AFADC00589742 /* StickyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
 		C73998852C1B003900589742 /* Storyboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
 		C73998872C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StickyHeaderCollectionViewController.storyboard; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71625F02CE5F770005F7C74 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,15 @@
 				C70E02F32CE58C06003D4D99 /* NetworkMonitor.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C71625F12CE5F7E7005F7C74 /* KingFisher */ = {
+			isa = PBXGroup;
+			children = (
+				C71625F22CE5FB9F005F7C74 /* KingFisherViewController.storyboard */,
+				C71625F42CE5FBC1005F7C74 /* KingFisherViewController.swift */,
+			);
+			path = KingFisher;
 			sourceTree = "<group>";
 		};
 		C73998802C1AFA8C00589742 /* CollectionView */ = {
@@ -192,6 +207,7 @@
 		C766C9B72B8849D70075D0B5 /* DevRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				C71625F12CE5F7E7005F7C74 /* KingFisher */,
 				C739988A2C1FCFED00589742 /* Model */,
 				C766C9B82B8849D70075D0B5 /* AppDelegate.swift */,
 				C766C9BA2B8849D70075D0B5 /* SceneDelegate.swift */,
@@ -264,6 +280,9 @@
 				Base,
 			);
 			mainGroup = C766C9AC2B8849D70075D0B5;
+			packageReferences = (
+				C71625EE2CE5F770005F7C74 /* XCLocalSwiftPackageReference "../Kingfisher" */,
+			);
 			productRefGroup = C766C9B62B8849D70075D0B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +300,7 @@
 				C70760F62C22B16B006F9930 /* GeneralPurposeCollectionViewCell.xib in Resources */,
 				C766C9D12B884A580075D0B5 /* NormalScrollViewController.storyboard in Resources */,
 				C73998882C1B00A300589742 /* StickyHeaderCollectionViewController.storyboard in Resources */,
+				C71625F32CE5FB9F005F7C74 /* KingFisherViewController.storyboard in Resources */,
 				C73E60452B9093AE00586FC5 /* FileManipulateViewController.storyboard in Resources */,
 				C766C9C82B8849D80075D0B5 /* ViewController.storyboard in Resources */,
 				C70E02EA2CE58780003D4D99 /* NWPathMonitorViewController.storyboard in Resources */,
@@ -306,6 +326,7 @@
 				C766C9BD2B8849D70075D0B5 /* ViewController.swift in Sources */,
 				C70E02F42CE58C06003D4D99 /* NetworkMonitor.swift in Sources */,
 				C70E02EE2CE58808003D4D99 /* NWPathMonitorViewController.swift in Sources */,
+				C71625F52CE5FBC1005F7C74 /* KingFisherViewController.swift in Sources */,
 				C766C9C32B8849D70075D0B5 /* DevRecipe.xcdatamodeld in Sources */,
 				C766C9B92B8849D70075D0B5 /* AppDelegate.swift in Sources */,
 				C766C9BB2B8849D70075D0B5 /* SceneDelegate.swift in Sources */,
@@ -461,7 +482,7 @@
 				INFOPLIST_FILE = DevRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = NWPathMonitorViewController;
+				INFOPLIST_KEY_UIMainStoryboardFile = KingFisherViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +513,7 @@
 				INFOPLIST_FILE = DevRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = NWPathMonitorViewController;
+				INFOPLIST_KEY_UIMainStoryboardFile = KingFisherViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -533,6 +554,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C71625EE2CE5F770005F7C74 /* XCLocalSwiftPackageReference "../Kingfisher" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Kingfisher;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C71625EF2CE5F770005F7C74 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C766C9C12B8849D70075D0B5 /* DevRecipe.xcdatamodeld */ = {
